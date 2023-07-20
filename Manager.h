@@ -1,5 +1,5 @@
-#ifndef __STAFFMEMBER_H__
-#define __STAFFMEMBER_H__
+#ifndef __MANAGER_H__
+#define __MANAGER_H__
 
 #include <stdio.h>
 #include "Animal.h"
@@ -7,15 +7,15 @@
 #define SIN_LENGTH 10 
 #define EMPLOYEE_ID_LENGTH 10 
 
-typedef struct _staffmember{
-    Animal* assigned_animals;
+typedef struct _manager{
     char* First_name;
     char* Last_name;
     char SIN[SIN_LENGTH];
     char employee_id[EMPLOYEE_ID_LENGTH];
-} StaffMember;
+    Animal** assigned_animals;
+} Manager;
 
-StaffMember* createManager(char* fName, char* lName, char* socInsNum, char* empID, Animal* Anim);
+Manager* createManager(char* fName, char* lName, char* socInsNum, char* empID, Animal* Anim);
 
 char* getFirstName();
 

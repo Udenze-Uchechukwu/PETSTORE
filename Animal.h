@@ -11,19 +11,19 @@ typedef struct _animal{
     char ID[ID_LENGTH + 1];
     char* type;
     int assigned_kennel = -1;
-    StaffMember* assigned_staff;
+    StaffMember** assigned_staff;
 } Animal;
 
 Animal* createAnimal(char* name, char* ID, char* type, int kennel, Staffmember* stf);
 
 void addStaff(StaffMember* stf);
 
-StaffMember* getAssignedStaff();
+StaffMember** getAssignedStaff();
 
 void removeStaff(char* staffID);
 
 int hasStaff(char* staffID);
-//hellllllllllllllllllllllllooooooooooooooooooooo
+
 void setAssignedKennel(int newKennelLabel);
 
 int getAssignedKennel();
