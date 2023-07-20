@@ -5,7 +5,7 @@
 #define EMPLOYEE_ID_LENGTH 10 
 
 typedef struct _staffmember{
-    char*[Animal] assigned_animals;
+    char** assigned_animals;
     char* First_name;
     char* Last_name;
     char SIN[SIN_LENGTH];
