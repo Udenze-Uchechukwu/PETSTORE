@@ -39,4 +39,4 @@ int hasAnimal(char* animID)
 
 //char* toString();
 
-#endif 
+#endif
