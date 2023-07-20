@@ -21,4 +21,4 @@ void removeAnimal(Animal a);
 
 int hasAnimal()
 
-#
+#endif
