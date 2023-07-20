@@ -1,3 +1,6 @@
+#ifndef __STAFFMEMBER_H__
+#define __STAFFMEMBER_H__
+
 #include <stdio.h>
 #include "Animal.h"
 
@@ -17,3 +20,5 @@ void assigAnimal(Animal a);
 void removeAnimal(Animal a);
 
 int hasAnimal()
+
+#
