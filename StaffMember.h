@@ -15,7 +15,7 @@ typedef struct _staffmember{
     char employee_id[EMPLOYEE_ID_LENGTH];
 } StaffMember;
 
-StaffMember* createManager(char* fName, char* lName, char* socInsNum, char* empID, Animal* Anim);
+StaffMember* createStaffMember(char* fName, char* lName, char* socInsNum, char* empID, Animal* Anim);
 
 char* getFirstName();
 
@@ -35,7 +35,7 @@ void removeAnimal(char* animID);
 
 Animal** getAssignedAnimals();
 
-int hasAnimal(char* animID)
+int hasAnimal(char* animID);
 
 //char* toString();
 
